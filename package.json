@@ -1,0 +1,35 @@
+{
+  "name": "grunt-uid",
+  "description": "generates unique ids",
+  "version": "0.1.0",
+  "homepage": "https://github.com/christophwitzko/grunt-uid",
+  "author": "Christoph Witzko <npm@christophwitzko.com> (http://christophwitzko.com/)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/christophwitzko/grunt-uid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/christophwitzko/grunt-uid/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/christophwitzko/grunt-uid/blob/master/LICENSE"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
