@@ -26,64 +26,34 @@ In your project's Gruntfile, add a section named `uid` to the data object passed
 grunt.initConfig({
   uid: {
     options: {
-      // Task-specific options go here.
+      length: 4,
+      file: '.uid',
+      confname: 'builduid'
     },
-    your_target: {
-      // Target-specific file lists and/or options go here.
+    gen: {
+      generate: true
     },
-  },
+    def: {
+
+    }
+  }
 });
 ```
 
 ### Options
 
-#### options.separator
+#### options.length
+Type: `Integer`
+Default value: `8`
+
+#### options.file
 Type: `String`
-Default value: `',  '`
+Default value: `'build.uid'`
 
-A string value that is used to do something with whatever.
-
-#### options.punctuation
+#### options.confname
 Type: `String`
-Default value: `'.'`
+Default value: `'uid'`
 
-A string value that is used to do something else with whatever else.
-
-### Usage Examples
-
-#### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
-
-```js
-grunt.initConfig({
-  uid: {
-    options: {},
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-});
-```
-
-#### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
-
-```js
-grunt.initConfig({
-  uid: {
-    options: {
-      separator: ': ',
-      punctuation: ' !!!',
-    },
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-});
-```
-
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
 _(Nothing yet)_
